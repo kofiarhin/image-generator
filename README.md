@@ -1,17 +1,17 @@
-# 🎨 Image Generator API
+# Image Generator API
 
 A powerful REST API service for generating high-quality images using Hugging Face's Stable Diffusion models. Built with Node.js and Express, this service provides both file-based storage and base64 data URLs for maximum flexibility in image handling.
 
-## ✨ Features
+## Features
 
-- 🚀 **Fast Image Generation**: Generate images using state-of-the-art Stable Diffusion models
-- 💾 **Dual Output Formats**: Get images as base64 data URLs or saved files
-- 🔧 **Easy Integration**: Simple REST API with comprehensive error handling
-- 🛡️ **Production Ready**: Built with Express.js and proper middleware
-- 📱 **Cross-Platform**: Works with any frontend framework or backend system
-- 🎯 **Flexible Deployment**: Run locally or deploy to any cloud platform
+- **Fast Image Generation**: Generate images using state-of-the-art Stable Diffusion models
+- **Dual Output Formats**: Get images as base64 data URLs or saved files
+- **Easy Integration**: Simple REST API with comprehensive error handling
+- **Production Ready**: Built with Express.js and proper middleware
+- **Cross-Platform**: Works with any frontend framework or backend system
+- **Flexible Deployment**: Run locally or deploy to any cloud platform
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have:
 
@@ -27,7 +27,7 @@ Before you begin, ensure you have:
 - Stable Diffusion models require Pro subscription for API access
 - Without Pro, you'll receive 404 errors when making requests
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Clone and Install**
 
@@ -57,7 +57,7 @@ Before you begin, ensure you have:
      -d '{"prompt": "A beautiful sunset over mountains"}'
    ```
 
-## 📖 API Documentation
+## API Documentation
 
 ### Endpoint: `POST /api/generate-image`
 
@@ -108,7 +108,7 @@ Content-Type: application/json
 | `filePath` | string  | Local file path where image is saved |
 | `error`    | string  | Error message (only on failure)      |
 
-## 💻 Usage Examples
+## Usage Examples
 
 ### JavaScript/Node.js
 
@@ -240,7 +240,7 @@ app.listen(3000, () => {
 });
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -256,7 +256,7 @@ The server can be configured by modifying the files in the `server/` directory:
 - `server/generateImage.js` - Image generation logic
 - `server/saveImage.js` - File saving utilities
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -298,7 +298,7 @@ HUGGING_FACE_API_KEY=your_actual_api_key_here
 | `429`      | Rate limit exceeded                      |
 | `500`      | Internal server error                    |
 
-## 📦 Dependencies
+## Dependencies
 
 ### Runtime Dependencies
 
@@ -311,7 +311,7 @@ HUGGING_FACE_API_KEY=your_actual_api_key_here
 
 - `nodemon` - Development server with auto-restart
 
-## 🚀 Deployment
+## Deployment
 
 ### Local Development
 
@@ -338,7 +338,7 @@ EXPOSE 3000
 CMD ["node", "server/server.js"]
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -346,11 +346,11 @@ CMD ["node", "server/server.js"]
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Hugging Face](https://huggingface.co/) for providing the Stable Diffusion models
 - [Stability AI](https://stability.ai/) for the original Stable Diffusion model
@@ -358,4 +358,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ using Stable Diffusion and Node.js**
+Made with love using Stable Diffusion and Node.js
