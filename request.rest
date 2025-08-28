@@ -1,0 +1,9 @@
+get http://localhost:5000
+
+###
+POST http://localhost:5000/api/image-generator
+Content-Type: application/json
+
+{
+    "prompt": "Generate an image of a breathtaking sunset over the horizon, with vibrant shades of orange, pink, and purple blending into the sky. Soft golden light reflects on calm water, with subtle silhouettes of trees and mountains in the background for depth and atmosphere."
+}
